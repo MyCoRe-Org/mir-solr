@@ -137,6 +137,7 @@
     <field name="mods.pindexname" type="string" multiValued="true" />
     <field name="mods.pindexname.published" type="string" multiValued="true" />
     <field name="mods.embargo" type="string" />
+	<field name="mods.embargo.date" type="date_range" />
     <field name="mods.part" type="string" multiValued="true" />
     <dynamicField name="mods.part.*" type="string" />
     <dynamicField name="mods.part.order*" type="int" />
@@ -265,6 +266,7 @@
     <fieldType name="tdate" class="solr.TrieDateField" docValues="true" precisionStep="6" positionIncrementGap="0"/>
     <fieldType name="tdates" class="solr.TrieDateField" docValues="true" precisionStep="6" positionIncrementGap="0" multiValued="true"/>
 
+    <fieldType name="date_range" class="solr.DateRangeField"/>
 
     <!--Binary data type. The data should be sent/retrieved in as Base64 encoded Strings -->
     <fieldType name="binary" class="solr.BinaryField"/>
