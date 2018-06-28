@@ -1,0 +1,6 @@
+[submodule "configset-main"]
+	path = configsets/mycore-main
+	url = ../mycore_solr_configset_main.git
+[submodule "configset-class"]
+	path = configsets/mycore-class
+	url = ../mycore_solr_configset_classification.git
